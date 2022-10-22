@@ -34,6 +34,10 @@
 				player.load( JSON.parse( text ) );
 				player.setSize( window.innerWidth, window.innerHeight );
 				player.play();
+				
+				var renderer = new THREE.WebGLRenderer( {alpha: true } );
+
+renderer.setClearColor( 0x000000, 0 ); 
 
 				document.body.appendChild( player.dom );
 
